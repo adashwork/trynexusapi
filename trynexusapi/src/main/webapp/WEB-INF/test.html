@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jobcategorypulldown</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>大分類</th>
+			<td><select name="largecd" id="largecd">
+					<option value="A">農業，林業</option>
+					<option value="B">漁業</option>
+					<option value="C">鉱業，採石業，砂利採取業</option>
+			</select></td>
+		</tr>
+		<tr>
+			<th>中分類</th>
+			<td id="name">
+				<select name="middlecd" id="middlecd">
+					<!--  jbocategorypulldown.jsにより、下記のように中分類カテゴリ<option>が挿入される -->
+					<!--  <option value="A">A型</option> -->
+			</select></td>
+		</tr>
+		<tr>
+			<th>小分類</th>
+			<td id="unitprice"></td>
+		</tr>
+	</table>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jobcategorypulldown.js"></script>
+</body>
+</html>
